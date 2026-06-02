@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 4000facfbdd9d68458da8ba6ff0e500c
+guid: f6272d8e9bc47ca4a8eb33c3181b82ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2097390244400007752
-    second: ProfesoraIddle_0
+      213: 5346494968674091786
+    second: ProfesoraWalking_0
   - first:
-      213: 6269851411587419192
-    second: ProfesoraIddle_1
+      213: -2473988310244522116
+    second: ProfesoraWalking_1
   - first:
-      213: 736764139074294021
-    second: ProfesoraIddle_2
+      213: 1761525442587448
+    second: ProfesoraWalking_2
   - first:
-      213: -7203861289195882124
-    second: ProfesoraIddle_3
+      213: -6341091631479082330
+    second: ProfesoraWalking_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ProfesoraIddle_0
+      name: ProfesoraWalking_0
       rect:
         serializedVersion: 2
-        x: 19
+        x: 21
         y: 72
-        width: 24
+        width: 22
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84a05d8905d6b1d10800000000000000
-      internalID: 2097390244400007752
+      spriteID: a038b39d8d0923a40800000000000000
+      internalID: 5346494968674091786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProfesoraIddle_1
+      name: ProfesoraWalking_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 72
-        width: 24
+        x: 80
+        y: 74
+        width: 26
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83c4626c3acf20750800000000000000
-      internalID: 6269851411587419192
+      spriteID: c7708655db0aaadd0800000000000000
+      internalID: -2473988310244522116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProfesoraIddle_2
+      name: ProfesoraWalking_2
       rect:
         serializedVersion: 2
-        x: 19
+        x: 21
         y: 8
-        width: 24
+        width: 22
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50115c8b413893a00800000000000000
-      internalID: 736764139074294021
+      spriteID: 83ba44a1912460000800000000000000
+      internalID: 1761525442587448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProfesoraIddle_3
+      name: ProfesoraWalking_3
       rect:
         serializedVersion: 2
-        x: 83
-        y: 8
-        width: 24
+        x: 80
+        y: 10
+        width: 26
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 479ba4e335eb60c90800000000000000
-      internalID: -7203861289195882124
+      spriteID: 6a2bc79f1caeff7a0800000000000000
+      internalID: -6341091631479082330
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ProfesoraIddle_0: 2097390244400007752
-      ProfesoraIddle_1: 6269851411587419192
-      ProfesoraIddle_2: 736764139074294021
-      ProfesoraIddle_3: -7203861289195882124
+      ProfesoraWalking_0: 5346494968674091786
+      ProfesoraWalking_1: -2473988310244522116
+      ProfesoraWalking_2: 1761525442587448
+      ProfesoraWalking_3: -6341091631479082330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

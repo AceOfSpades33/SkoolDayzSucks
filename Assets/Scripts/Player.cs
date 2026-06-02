@@ -4,11 +4,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rB;
-    [SerializeField] private float speed;
-    [SerializeField] private Vector2 dir;
+    [SerializeField] public Vector2 dir;
     [SerializeField] public Controls c;
     [SerializeField] private float jumpForce = 20;
     [SerializeField] private bool touchFloor = false;
+    [SerializeField] private PlayerStats playerStats;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rB.AddForce(dir * speed);
+        rB.AddForce(dir * playerStats.speed);
     }
 
     void Update()
@@ -40,12 +40,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         touchFloor = true;
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
         touchFloor = false;
     }
