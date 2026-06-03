@@ -42,12 +42,14 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        touchFloor = true;
+        if(other.tag == "Floor")
+            touchFloor = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        touchFloor = false;
+        if(other.tag == "Floor")
+            touchFloor = false;
     }
 
 }

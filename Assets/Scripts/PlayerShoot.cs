@@ -4,7 +4,9 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private Player player;
+    [SerializeField] private GameObject bulletRange;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform puntoMira;
     private bool balaGenerada = false;
 
     private void Update()
@@ -28,9 +30,23 @@ public class PlayerShoot : MonoBehaviour
     IEnumerator BulletLife()
     {
         balaGenerada = true;
-        GameObject bulletClone = Instantiate(bullet, this.transform.position, Quaternion.identity, this.transform);
-        yield return new WaitForSeconds(3f);
-        Destroy(bulletClone);
+        GameObject bulletRangeClone = Instantiate(bulletRange, this.transform.position, Quaternion.identity, this.transform);
+        Player player = GetComponentInParent<Player>();
+        if(player.dir.x < 0)
+        {
+            bulletRangeClone.transform.rotation = Quaternion.Euler(0, 180f, 0);
+        }
+        else
+        {
+            bulletRangeClone.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        transform.SetParent(null);
+
+        bulletRangeClone.transform.SetParent(null);
+
+        Instantiate(bullet, puntoMira.position, Quaternion.identity, this.transform);
+        yield return new WaitForSeconds(1f);
+        Destroy(bulletRangeClone);
         balaGenerada = false;
 
     }
