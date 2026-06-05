@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool turn;
     [SerializeField] private Rigidbody2D rB;
     [SerializeField] private Vector2 dir;
+    [SerializeField] private bool inRange;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -31,5 +32,18 @@ public class EnemyMovement : MonoBehaviour
         {
             dir.x *= -1;
         }
+    }
+
+    private void TryAttack()
+    {
+        if(inRange)
+        {
+            Attack(10);
+        }
+    }
+
+    private void Attack(float damage)
+    {
+        
     }
 }
