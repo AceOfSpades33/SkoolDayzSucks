@@ -1,4 +1,4 @@
-using System;
+
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rB;
     [SerializeField] private Vector2 dir;
     [SerializeField] private bool inRange;
+    private bool touchingFloor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -23,15 +24,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Walls")
-        {
-            dir.x *= -1;
-        }
+        TryJump();
     }
 
     private void TryAttack()
@@ -42,8 +35,45 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    private void TryJump()
+    {
+        int salto = Random.Range(1, 11);
+        if(salto == 10 && touchingFloor == true)
+        {
+            jump = true;
+            Jump();
+        }
+        else
+        {
+            jump = false;
+        }
+    }
+
+    private void Jump()
+    {
+
+        rB.AddForceY(100);
+        
+    }
+
     private void Attack(float damage)
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Floor")
+            touchingFloor = true;
+        if(other.tag == "Walls")
+        {
+            dir.x *= -1;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.tag == "Floor")
+            touchingFloor = false;
     }
 }
