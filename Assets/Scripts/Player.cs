@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce = 20;
     [SerializeField] private bool touchFloor = false;
     [SerializeField] private PlayerStats playerStats;
+    [SerializeField] public bool falling;
 
     private void Awake()
     {
@@ -38,6 +39,8 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
+        
+        CheckFall();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,6 +53,19 @@ public class Player : MonoBehaviour
     {
         if(other.tag == "Floor")
             touchFloor = false;
+    }
+
+    //Que se caiga
+    void CheckFall()
+    {
+        if(rB.linearVelocityY < -2)
+        {
+            falling = true;
+        }
+        else
+        {
+            falling = false;
+        }
     }
 
 }

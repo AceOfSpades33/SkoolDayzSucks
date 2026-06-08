@@ -12,4 +12,9 @@ public class PlayerStats : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
+
+    public void SetHealth(int healthToSet)
+    {
+        currentHealth = healthToSet;
+    }
 }

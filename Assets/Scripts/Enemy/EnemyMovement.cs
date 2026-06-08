@@ -19,12 +19,22 @@ public class EnemyMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(jump == false)
+        {
+            speed = 5;
+        }
+        else
+        {
+            speed = 0;
+        }
+
         rB.AddForce(dir * speed);
     }
 
     void Update()
     {
         TryJump();
+        CheckDir();
     }
 
     private void TryAttack()
@@ -37,13 +47,15 @@ public class EnemyMovement : MonoBehaviour
 
     private void TryJump()
     {
-        int salto = Random.Range(1, 11);
-        if(salto == 10 && touchingFloor == true)
+        int salto = Random.Range(1, 101);
+        if(salto == 100 && touchingFloor == true)
         {
-            jump = true;
-            Jump();
+            if(speed > 0)
+            {
+                Jump();
+            }
         }
-        else
+        if(salto < 3)
         {
             jump = false;
         }
@@ -51,9 +63,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void Jump()
     {
-
-        rB.AddForceY(100);
-        
+        rB.AddForceY(50);
+        jump = true;
     }
 
     private void Attack(float damage)
@@ -67,6 +78,7 @@ public class EnemyMovement : MonoBehaviour
             touchingFloor = true;
         if(other.tag == "Walls")
         {
+            speed = -3;
             dir.x *= -1;
         }
     }
@@ -75,5 +87,17 @@ public class EnemyMovement : MonoBehaviour
     {
         if(other.tag == "Floor")
             touchingFloor = false;
+    }
+
+    private void CheckDir()
+    {
+        if(dir.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180f, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }

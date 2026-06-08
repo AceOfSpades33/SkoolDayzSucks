@@ -7,13 +7,22 @@ public class ManageAnimations : MonoBehaviour
 
     void Update()
     {
-        if(player.dir.x < 0 || player.dir.x > 0)
+        if(player.dir.x < 0 && player.falling == false || player.dir.x > 0 && player.falling == false)
         {
             anim.SetFloat("dir", 1);
         }
         else
         {
             anim.SetFloat("dir", -1);
+        }
+
+        if(player.falling == true)
+        {
+            anim.SetBool("falling", true);
+        }
+        else
+        {
+            anim.SetBool("falling", false);
         }
     }
 
