@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
         rB = GetComponent<Rigidbody2D>();
         c = new Controls();
         c.Enable();
-        this.transform.position = new Vector2(0,0);
+        this.transform.position = new Vector2(0, 0);
     }
 
     private void FixedUpdate()
@@ -26,12 +26,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(c.Player.Jump.IsPressed() && touchFloor == true)
+        if (c.Player.Jump.IsPressed() && touchFloor == true)
         {
             rB.AddForceY(jumpForce);
         }
         dir = c.Player.Move.ReadValue<Vector2>();
-        if(dir.x < 0)
+        if (dir.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180f, 0);
         }
@@ -39,26 +39,26 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        
+
         CheckFall();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Floor")
+        if (other.tag == "Floor")
             touchFloor = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Floor")
+        if (other.tag == "Floor")
             touchFloor = false;
     }
 
     //Que se caiga
     void CheckFall()
     {
-        if(rB.linearVelocityY < -2)
+        if (rB.linearVelocityY < -2)
         {
             falling = true;
         }

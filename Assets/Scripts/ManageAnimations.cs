@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ManageAnimations : MonoBehaviour
 {
-    [SerializeField] private Animator anim;
+    [SerializeField] public Animator anim;
     [SerializeField] private Player player;
 
     void Update()
     {
-        if(player.dir.x < 0 && player.falling == false || player.dir.x > 0 && player.falling == false)
+        if (player.dir.x < 0 && player.falling == false || player.dir.x > 0 && player.falling == false)
         {
             anim.SetFloat("dir", 1);
         }
@@ -16,7 +16,7 @@ public class ManageAnimations : MonoBehaviour
             anim.SetFloat("dir", -1);
         }
 
-        if(player.falling == true)
+        if (player.falling == true)
         {
             anim.SetBool("falling", true);
         }
