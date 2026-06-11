@@ -6,6 +6,7 @@ public class Buttons : MonoBehaviour
     public void PlayButton()
     {
         SceneManager.LoadScene("Game");
+        Time.timeScale = 1f;
     }
 
     public void OptionsButton()
@@ -17,4 +18,5 @@ public class Buttons : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

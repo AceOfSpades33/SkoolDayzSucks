@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "SkoolDayzSucks.slnx",
+    "dotnet.defaultSolution": "SkoolDayzsSucks.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
