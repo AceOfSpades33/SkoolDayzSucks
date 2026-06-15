@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour
         if(collision.tag == "Player")
         {
             collision.TryGetComponent<PlayerStats>(out PlayerStats playerStats);
-            playerStats.SetHealth(0);
+            playerStats.SetHealth(30);
         }
         if(collision.tag == "Enemy")
         {

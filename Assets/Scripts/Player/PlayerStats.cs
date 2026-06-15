@@ -10,14 +10,16 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int coins = 0;
     [SerializeField] private int maxCoins = 0;
     [SerializeField] private CoinsNumber coinsNumberScript;
+    [SerializeField] private HealthUI barraVida;
     [SerializeField] public bool entrar;
     public bool abrirPuerta;
 
     void Awake()
     {
         entrar = false;
+        maxHealth = 100;
         abrirPuerta = false;
-        currentHealth = maxHealth;
+        SetHealth(maxHealth);
         coins = 0;
     }
 
@@ -37,6 +39,7 @@ public class PlayerStats : MonoBehaviour
     public void SetHealth(int healthToSet)
     {
         currentHealth = healthToSet;
+        barraVida.UpdateHealthAmount((float)currentHealth / maxHealth);
     }
 
     private void CheckCoins()
