@@ -22,7 +22,12 @@ public class EnemyStats : MonoBehaviour
     {
         if(currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        Destroy(this.gameObject);
     }
 }

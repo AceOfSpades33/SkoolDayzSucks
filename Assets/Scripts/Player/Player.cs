@@ -26,21 +26,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (c.Player.Jump.IsPressed() && touchFloor == true)
-        {
-            rB.AddForceY(jumpForce);
-        }
-        dir = c.Player.Move.ReadValue<Vector2>();
-        if (dir.x < 0)
-        {
-            transform.rotation = Quaternion.Euler(0, 180f, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-
+        Jump();
+        Movement();
         CheckFall();
+        CheckEnter();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -66,6 +55,40 @@ public class Player : MonoBehaviour
         {
             falling = false;
         }
+    }
+
+    void Movement()
+    {
+        dir = c.Player.Move.ReadValue<Vector2>();
+        if (dir.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180f, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
+    void CheckEnter()
+    {
+        if(c.Player.Enter.IsPressed() && playerStats.entrar)
+        {
+            
+        }
+    }
+
+    void Jump()
+    {
+        if (c.Player.Jump.IsPressed() && touchFloor == true)
+        {
+            rB.AddForceY(jumpForce);
+        }
+    }
+
+    void CheckDoor()
+    {
+        
     }
 
 }
