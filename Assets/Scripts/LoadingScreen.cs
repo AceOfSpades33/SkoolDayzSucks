@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class LoadingScreen : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI loadingText;
-    [SerializeField] private float fadeTime = 0.4f;
+    [SerializeField] private float fadeTime = 1f;
     [SerializeField] private CanvasGroup canvasGroup;
     private Sequence fadeSequence;
     private Sequence loadingSequence;
@@ -65,11 +65,11 @@ public class LoadingScreen : MonoBehaviour
     {
         loadingSequence?.Kill();
         loadingSequence = DOTween.Sequence().AppendCallback(() => loadingText.text = "Loading.")
-        .AppendInterval(0.3f)
+        .AppendInterval(0.4f)
         .AppendCallback(() => loadingText.text = "Loading..")
-        .AppendInterval(0.3f)
+        .AppendInterval(0.4f)
         .AppendCallback(() => loadingText.text = "Loading...")
-        .AppendInterval(0.3f)
+        .AppendInterval(0.4f)
         .AppendCallback(() => loadingText.text = "Loading")
         .SetLoops(-1, LoopType.Restart);
     }

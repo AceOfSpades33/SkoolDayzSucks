@@ -8,6 +8,11 @@ public class ButtonsMenuPap : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private LoadingScreen screen;
 
+    void Awake()
+    {
+        screen = GameObject.FindFirstObjectByType<LoadingScreen>();
+    }
+
     public void PauseBtn()
     {
         menuPausa.SetActive(true);

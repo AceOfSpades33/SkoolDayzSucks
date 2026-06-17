@@ -85,6 +85,7 @@ public class Player : MonoBehaviour
         if(c.Player.Enter.IsPressed() && playerStats.entrar)
         {
             this.transform.position = new Vector2(-465, 465);
+            jumpForce = 10;
         }
     }
 
