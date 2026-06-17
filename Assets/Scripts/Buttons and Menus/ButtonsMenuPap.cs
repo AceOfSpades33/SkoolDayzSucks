@@ -5,6 +5,8 @@ public class ButtonsMenuPap : MonoBehaviour
 {
 
     [SerializeField] private GameObject menuPausa;
+    [SerializeField] private Player player;
+    [SerializeField] private LoadingScreen screen;
 
     public void PauseBtn()
     {
@@ -20,6 +22,8 @@ public class ButtonsMenuPap : MonoBehaviour
 
     public void SalirBtn()
     {
-        SceneManager.LoadScene("MainMenu");
+        player.c.Disable();
+        Time.timeScale = 1f;
+        screen.StartLoading("MainMenu");
     }
 }

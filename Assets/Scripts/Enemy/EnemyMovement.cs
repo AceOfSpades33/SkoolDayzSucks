@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool jump;
     [SerializeField] private bool turn;
     [SerializeField] private Rigidbody2D rB;
-    [SerializeField] private Vector2 dir;
+    [SerializeField] public Vector2 dir;
     [SerializeField] private bool inRange;
     private bool touchingFloor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

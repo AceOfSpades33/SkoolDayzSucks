@@ -31,7 +31,7 @@ public class LoadingScreen : MonoBehaviour
 
     public void StartLoading(string sceneName)
     {
-        
+        StartCoroutine(LoadCoroutine(sceneName));
     }
 
     private IEnumerator LoadCoroutine(string sceneName)

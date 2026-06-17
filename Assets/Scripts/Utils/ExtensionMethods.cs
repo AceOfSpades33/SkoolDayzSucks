@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class ExtensionMethods 
+public static class ExtensionMethods
 {
     public static void Toggle(this CanvasGroup canvasGroup, bool isActive)
     {

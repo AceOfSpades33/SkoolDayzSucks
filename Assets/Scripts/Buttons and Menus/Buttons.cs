@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    [SerializeField] private LoadingScreen screen;
     public void PlayButton()
     {
-        SceneManager.LoadScene("Game");
+        screen.StartLoading("Game");
         Time.timeScale = 1f;
     }
 

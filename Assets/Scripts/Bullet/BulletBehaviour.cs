@@ -11,13 +11,16 @@ public class BulletBehaviour : MonoBehaviour
     private void Awake()
     {
         Player player = GetComponentInParent<Player>();
-        if (player.dir.x >= 0)
+        if(player != null)
         {
-            dir.x = 1;
-        }
-        else
-        {
-            dir.x = -1;
+            if (player.dir.x >= 0)
+            {
+                dir.x = 1;
+            }
+            else
+            {
+                dir.x = -1;
+            }
         }
         transform.SetParent(null);
         dir.y = dirY;

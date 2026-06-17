@@ -19,7 +19,13 @@ public class Spikes : MonoBehaviour
         if(collision.tag == "Player")
         {
             collision.TryGetComponent<PlayerStats>(out PlayerStats playerStats);
-            playerStats.SetHealth(30);
+            float healthToLose = (float) playerStats.currentHealth - 70;
+            if(healthToLose <= 0)
+            {
+                healthToLose = 0;
+            }
+
+            playerStats.SetHealth(healthToLose);
         }
         if(collision.tag == "Enemy")
         {

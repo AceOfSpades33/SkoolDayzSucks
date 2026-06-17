@@ -5,7 +5,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth;
     [SerializeField] public float speed =  5;
-    [SerializeField] private int currentHealth;
+    [SerializeField] public int currentHealth;
     [SerializeField] private int damage = 10;
     [SerializeField] private int coins = 0;
     [SerializeField] private int maxCoins = 0;
@@ -36,9 +36,9 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void SetHealth(int healthToSet)
+    public void SetHealth(float healthToSet)
     {
-        currentHealth = healthToSet;
+        currentHealth = (int) healthToSet;
         barraVida.UpdateHealthAmount((float)currentHealth / maxHealth);
     }
 

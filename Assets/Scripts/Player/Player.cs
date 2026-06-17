@@ -36,6 +36,16 @@ public class Player : MonoBehaviour
     {
         if (other.tag == "Floor")
             touchFloor = true;
+        if(other.tag == "EnemyBullet")
+            playerStats.SetHealth(playerStats.currentHealth - 10);
+        
+    }
+
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Floor")
+            touchFloor = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -74,7 +84,7 @@ public class Player : MonoBehaviour
     {
         if(c.Player.Enter.IsPressed() && playerStats.entrar)
         {
-            
+            this.transform.position = new Vector2(-465, 465);
         }
     }
 
