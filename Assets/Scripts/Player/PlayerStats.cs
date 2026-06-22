@@ -6,7 +6,6 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int maxHealth;
     [SerializeField] public float speed =  5;
     [SerializeField] public int currentHealth;
-    [SerializeField] private int damage = 10;
     [SerializeField] private int coins = 0;
     [SerializeField] private int maxCoins = 0;
     [SerializeField] private CoinsNumber coinsNumberScript;
@@ -34,12 +33,20 @@ public class PlayerStats : MonoBehaviour
         {
             CheckCoins();
         }
+        if(this.transform.position.y < -50)
+        {
+            GameOver();
+        }
     }
 
     public void SetHealth(float healthToSet)
     {
         currentHealth = (int) healthToSet;
         barraVida.UpdateHealthAmount((float)currentHealth / maxHealth);
+        if(currentHealth <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void CheckCoins()
@@ -57,4 +64,10 @@ public class PlayerStats : MonoBehaviour
             coins = coins + 1;
         }
     }
+
+    private void GameOver()
+    {
+        Destroy(this.gameObject);
+    }
+
 }

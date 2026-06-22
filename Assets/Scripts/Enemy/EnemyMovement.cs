@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool turn;
     [SerializeField] private Rigidbody2D rB;
     [SerializeField] public Vector2 dir;
-    [SerializeField] private bool inRange;
     private bool touchingFloor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -37,13 +36,6 @@ public class EnemyMovement : MonoBehaviour
         CheckDir();
     }
 
-    private void TryAttack()
-    {
-        if(inRange)
-        {
-            Attack(10);
-        }
-    }
 
     private void TryJump()
     {
@@ -67,10 +59,6 @@ public class EnemyMovement : MonoBehaviour
         jump = true;
     }
 
-    private void Attack(float damage)
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

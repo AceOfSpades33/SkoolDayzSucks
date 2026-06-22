@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyBuletBehavoiur : MonoBehaviour
@@ -22,6 +23,7 @@ public class EnemyBuletBehavoiur : MonoBehaviour
 
         transform.SetParent(null);
         dir.y = dirY;
+        StartCoroutine(BulletLive());
     }
 
     private void FixedUpdate()
@@ -38,5 +40,11 @@ public class EnemyBuletBehavoiur : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private IEnumerator BulletLive()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(this.gameObject);
     }
 }
