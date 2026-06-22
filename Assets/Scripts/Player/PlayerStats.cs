@@ -6,8 +6,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int maxHealth;
     [SerializeField] public float speed =  5;
     [SerializeField] public int currentHealth;
-    [SerializeField] private int coins = 0;
-    [SerializeField] private int maxCoins = 0;
+    [SerializeField] public int coins = 0;
+    [SerializeField] public int maxCoins = 0;
     [SerializeField] private CoinsNumber coinsNumberScript;
     [SerializeField] private HealthUI barraVida;
     [SerializeField] public bool entrar;

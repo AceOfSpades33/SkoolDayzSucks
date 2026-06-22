@@ -4,6 +4,7 @@ public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private int maxLive;
     [SerializeField] public int currentHealth = 10;
+    [SerializeField] private ShakeFeedback shakeFeedback;
     
     void Awake()
     {
@@ -21,8 +22,9 @@ public class EnemyStats : MonoBehaviour
 
     public void SetHealth(int healthToSet)
     {
+        shakeFeedback?.DoShake();
         currentHealth = healthToSet;
-        if(currentHealth <= 0)
+        if(currentHealth <= 0 && this.gameObject.name != "Boss")
         {
             Die();
         }
@@ -35,6 +37,6 @@ public class EnemyStats : MonoBehaviour
 
     void Die()
     {
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 }
