@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 2ddedbb9e33a23449ba6af60e3fe6ece
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1008228370876281392
+    second: ProfesoraHealing_0
+  - first:
+      213: 6337985528900565880
+    second: ProfesoraHealing_1
+  - first:
+      213: -5838957363746806219
+    second: ProfesoraHealing_2
+  - first:
+      213: 5721137424852945815
+    second: ProfesoraHealing_3
+  - first:
+      213: 2263032433801332404
+    second: ProfesoraHealing_4
+  - first:
+      213: -5158516026182341148
+    second: ProfesoraHealing_5
+  - first:
+      213: -3209426773393502800
+    second: ProfesoraHealing_6
+  - first:
+      213: -2323200833628270808
+    second: ProfesoraHealing_7
+  - first:
+      213: 6688770675894066179
+    second: ProfesoraHealing_8
+  - first:
+      213: -6472693953155755535
+    second: ProfesoraHealing_9
+  - first:
+      213: -5625147572847778223
+    second: ProfesoraHealing_10
+  - first:
+      213: -8700471197584654122
+    second: ProfesoraHealing_11
+  - first:
+      213: 3694789868369314505
+    second: ProfesoraHealing_12
+  - first:
+      213: 3555336025048058056
+    second: ProfesoraHealing_13
+  - first:
+      213: -8463712203276119206
+    second: ProfesoraHealing_14
+  - first:
+      213: -7210457912135495603
+    second: ProfesoraHealing_15
+  - first:
+      213: -3219816895518911697
+    second: ProfesoraHealing_16
+  - first:
+      213: 3669276960492390749
+    second: ProfesoraHealing_17
+  - first:
+      213: 3170958463278708341
+    second: ProfesoraHealing_18
+  - first:
+      213: -234695858444832904
+    second: ProfesoraHealing_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ProfesoraHealing_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 264
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddc27573ad0202f0800000000000000
+      internalID: -1008228370876281392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 264
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b3fa9224c05f750800000000000000
+      internalID: 6337985528900565880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 264
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536683bb63bd7fea0800000000000000
+      internalID: -5838957363746806219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 264
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b8d8f0d20956f40800000000000000
+      internalID: 5721137424852945815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 200
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b68aeb2208e76f10800000000000000
+      internalID: 2263032433801332404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 200
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eded3351054968b0800000000000000
+      internalID: -5158516026182341148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 200
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd80479a53d573d0800000000000000
+      internalID: -3209426773393502800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 200
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f02b1962552cfd0800000000000000
+      internalID: -2323200833628270808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 136
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c17b8bd7943dc50800000000000000
+      internalID: 6688770675894066179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 136
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f11556b42f5c26a0800000000000000
+      internalID: -6472693953155755535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 136
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156e147f5167fe1b0800000000000000
+      internalID: -5625147572847778223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 136
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d00379fa87b14780800000000000000
+      internalID: -8700471197584654122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 72
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c28dd73fc7864330800000000000000
+      internalID: 3694789868369314505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 72
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8832e1747175130800000000000000
+      internalID: 3555336025048058056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_14
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 72
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a539692089ada8a80800000000000000
+      internalID: -8463712203276119206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_15
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 72
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4052474bbe4feb90800000000000000
+      internalID: -7210457912135495603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 8
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f235bc4c799e053d0800000000000000
+      internalID: -3219816895518911697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 8
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d598ca474f3ebe230800000000000000
+      internalID: 3669276960492390749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 8
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576fe310ce1810c20800000000000000
+      internalID: 3170958463278708341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProfesoraHealing_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 8
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fe3273c513ebcf0800000000000000
+      internalID: -234695858444832904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ProfesoraHealing_0: -1008228370876281392
+      ProfesoraHealing_1: 6337985528900565880
+      ProfesoraHealing_10: -5625147572847778223
+      ProfesoraHealing_11: -8700471197584654122
+      ProfesoraHealing_12: 3694789868369314505
+      ProfesoraHealing_13: 3555336025048058056
+      ProfesoraHealing_14: -8463712203276119206
+      ProfesoraHealing_15: -7210457912135495603
+      ProfesoraHealing_16: -3219816895518911697
+      ProfesoraHealing_17: 3669276960492390749
+      ProfesoraHealing_18: 3170958463278708341
+      ProfesoraHealing_19: -234695858444832904
+      ProfesoraHealing_2: -5838957363746806219
+      ProfesoraHealing_3: 5721137424852945815
+      ProfesoraHealing_4: 2263032433801332404
+      ProfesoraHealing_5: -5158516026182341148
+      ProfesoraHealing_6: -3209426773393502800
+      ProfesoraHealing_7: -2323200833628270808
+      ProfesoraHealing_8: 6688770675894066179
+      ProfesoraHealing_9: -6472693953155755535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
