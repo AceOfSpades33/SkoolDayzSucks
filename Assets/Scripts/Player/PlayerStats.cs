@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int maxCoins = 0;
     [SerializeField] private CoinsNumber coinsNumberScript;
     [SerializeField] private HealthUI barraVida;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] public bool entrar;
     public bool abrirPuerta;
 
@@ -61,6 +62,7 @@ public class PlayerStats : MonoBehaviour
     {
         if(other.tag == "Coin")
         {
+            audioSource.Play();
             coins = coins + 1;
         }
     }

@@ -7,6 +7,7 @@ public class ButtonsMenuPap : MonoBehaviour
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private Player player;
     [SerializeField] private LoadingScreen screen;
+    [SerializeField] private AudioSource audioSource;
 
     void Awake()
     {

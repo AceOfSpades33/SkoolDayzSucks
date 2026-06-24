@@ -5,6 +5,7 @@ public class DoorManager : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private PlayerStats player;
     [SerializeField] private Collider2D collider;
+    [SerializeField] private AudioSource audioSource;
 
     void Awake()
     {
@@ -23,6 +24,7 @@ public class DoorManager : MonoBehaviour
     void OpenDoor()
     {
         anim.SetTrigger("open");
+        audioSource.Play();
         collider.enabled = true;
     }
 

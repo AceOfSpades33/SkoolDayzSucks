@@ -12,6 +12,7 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private Transform puntoMira;
     [SerializeField] private Transform puntoDiagonalArriba;
     [SerializeField] private Transform puntoDiagonalAbajo;
+    [SerializeField] private AudioSource audioSource;
     private bool balaGenerada = false;
 
     private void Update()
@@ -36,6 +37,7 @@ public class PlayerShoot : MonoBehaviour
     IEnumerator BulletLife()
     {
         balaGenerada = true;
+        audioSource.Play();
         GameObject bulletRangeClone = Instantiate(bulletRange, this.transform.position, Quaternion.identity, this.transform);
         Player player = GetComponentInParent<Player>();
         if (player.dir.x < 0)
