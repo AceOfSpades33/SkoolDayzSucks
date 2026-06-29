@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Buttons : MonoBehaviour
 {
     [SerializeField] private LoadingScreen screen;
+    [SerializeField] private GameObject optionsMenu;
 
     public void Awake()
     {
@@ -19,7 +20,12 @@ public class Buttons : MonoBehaviour
 
     public void OptionsButton()
     {
-        
+        optionsMenu.SetActive(true);
+    }
+
+    public void OptionsButtonExit()
+    {
+        optionsMenu.SetActive(false);
     }
 
     public void ExitButton()
