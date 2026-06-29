@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody2D rB;
     [SerializeField] public Vector2 dir;
     [SerializeField] public Controls c;
-    [SerializeField] private float jumpForce = 20;
+    [SerializeField] private AudioSource jumpSound;
+    [SerializeField] private float jumpForce = 40;
     [SerializeField] private bool touchFloor = false;
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] public bool falling;
@@ -93,6 +94,7 @@ public class Player : MonoBehaviour
     {
         if (c.Player.Jump.IsPressed() && touchFloor == true)
         {
+            jumpSound.Play();
             rB.AddForceY(jumpForce);
         }
     }

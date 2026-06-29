@@ -16,12 +16,14 @@ public class ButtonsMenuPap : MonoBehaviour
 
     public void PauseBtn()
     {
+        audioSource.Play();
         menuPausa.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void ContinueBtn()
     {
+        audioSource.Play();
         menuPausa.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -29,6 +31,7 @@ public class ButtonsMenuPap : MonoBehaviour
     public void SalirBtn()
     {
         player.c.Disable();
+        audioSource.Play();
         Time.timeScale = 1f;
         screen.StartLoading("MainMenu");
     }
