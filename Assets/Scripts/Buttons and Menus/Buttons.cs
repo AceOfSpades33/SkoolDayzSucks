@@ -16,7 +16,7 @@ public class Buttons : MonoBehaviour
     public void PlayButton()
     {
         audioSource.Play();
-        screen.StartLoading("Game");
+        screen.StartLoading("InicialCinematic");
         Time.timeScale = 1f;
     }
 
