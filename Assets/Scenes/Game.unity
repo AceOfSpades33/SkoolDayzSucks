@@ -1051,6 +1051,8 @@ MonoBehaviour:
   player: {fileID: 1316154857}
   screen: {fileID: 1097988482}
   audioSource: {fileID: 1737553490}
+  botonPause: {fileID: 211863570}
+  marco: {fileID: 634150277}
 --- !u!1001 &218972593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5678,6 +5680,8 @@ MonoBehaviour:
   player: {fileID: 1316154857}
   screen: {fileID: 1097988482}
   audioSource: {fileID: 1737553490}
+  botonPause: {fileID: 211863570}
+  marco: {fileID: 634150277}
 --- !u!1001 &1262425819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6147,7 +6151,7 @@ AudioSource:
   m_GameObject: {fileID: 1316154848}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
+  OutputAudioMixerGroup: {fileID: 6831407193458582818, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eab55c8574144c24fb315254037996c2, type: 3}
   m_PlayOnAwake: 0
@@ -6244,7 +6248,7 @@ AudioSource:
   m_GameObject: {fileID: 1316154848}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
+  OutputAudioMixerGroup: {fileID: 6831407193458582818, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 54d68bd9e4a68474bb68c5fe12f19053, type: 3}
   m_PlayOnAwake: 0
@@ -6358,7 +6362,7 @@ AudioSource:
   m_GameObject: {fileID: 1316154848}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
+  OutputAudioMixerGroup: {fileID: 6831407193458582818, guid: 1c3d9d7186ec0084e9d329bbf0dc45de, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e4e2f483d1c806148878baa0f9e60279, type: 3}
   m_PlayOnAwake: 0
@@ -7881,6 +7885,8 @@ MonoBehaviour:
   player: {fileID: 1316154857}
   screen: {fileID: 1097988482}
   audioSource: {fileID: 1737553490}
+  botonPause: {fileID: 211863570}
+  marco: {fileID: 634150277}
 --- !u!1001 &1677035105
 PrefabInstance:
   m_ObjectHideFlags: 0

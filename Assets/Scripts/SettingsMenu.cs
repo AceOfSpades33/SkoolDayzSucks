@@ -10,6 +10,7 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private Toggle fullScreenToggle;
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider musicSlider;
 
 
@@ -23,6 +24,7 @@ public class SettingsMenu : MonoBehaviour
         fullScreenToggle.onValueChanged.AddListener(SetFullScreen);
         masterSlider.onValueChanged.AddListener(SetMasterVolume);
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSfxVolume);
     }
 
     private void InitializeResolutions()
@@ -85,5 +87,10 @@ public class SettingsMenu : MonoBehaviour
     private void SetMusicVolume(float volume)
     {
         SetAudioMixerVolume("Music", volume);
+    }
+
+    private void SetSfxVolume(float volume)
+    {
+        SetAudioMixerVolume("Sfx", volume);
     }
 }
